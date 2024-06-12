@@ -1,0 +1,40 @@
+.textBlock {
+    padding: 79px 0 16px 70px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.25px;
+    color: var(--main-color);
+    width: fit-content;
+}
+
+@media (max-width: 1024px) {
+    .textBlock {
+        padding: 70px 50px 0 50px;
+    }
+
+    .title {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 770px) {
+    .textBlock {
+        padding: 30px 40px 0 40px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .textBlock {
+        padding: 30px 15px 0 15px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 28.13px;
+        letter-spacing: 2px;
+    }
+}

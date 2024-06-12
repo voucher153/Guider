@@ -1,0 +1,14 @@
+.services {
+    border: 1px solid #000;
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    .services {
+        flex-direction: column;
+        gap: 40px
+    }
+}

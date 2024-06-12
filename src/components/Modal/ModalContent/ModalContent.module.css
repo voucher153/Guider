@@ -1,0 +1,38 @@
+.modalContent {
+    width: 50vw;
+    height: 50vh;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.modalContent h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+
+.cross {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.cross svg {
+    width: 30px;
+    height: 30px;
+}
+
+.cross path {
+    stroke: var(--main-color)
+}
+
+@media (max-width: 770px) {
+    .modalContent {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+}

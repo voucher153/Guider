@@ -1,0 +1,86 @@
+.subtextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 350px;
+    margin-top: 76px;
+}
+
+.subtextBlock p {
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.firstText {
+    font-size: 24px;
+    line-height: 26px;
+    position: relative;
+}
+
+.firstText::before {
+    content: "";
+    width: 98.74px;
+    height: 8px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -30px;
+}
+
+.secondText {
+    font-size: 18px;
+    line-height: 24px;
+    color: #797979;
+}
+
+@media (max-width: 1024px) {
+    .subtextBlock {
+        width: 70%;
+        margin-top: 35px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .subtextBlock {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .subtextBlock {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtextBlock p {
+        text-align: center;
+    }
+
+    .firstText::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 320px) {
+    .subtextBlock {
+        padding-top: 12.5vw;
+        gap: 9.375vw;
+    }
+
+    .firstText {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .firstText::before {
+        top: -18.75vw;
+    }
+
+    .secondText {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}

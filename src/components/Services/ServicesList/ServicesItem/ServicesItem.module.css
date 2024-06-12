@@ -1,0 +1,75 @@
+.toolBlock {
+    border: 0.5px solid #f9f6e5;
+    width: 100%;
+    height: 100%;
+    padding: 4.5px 15px;
+}
+
+.toolContent, .toolContentHover {
+    padding: 0 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.toolContentHover {
+    border: 4px solid #2B4074;
+}
+
+.upBlock {
+    transform: translateY(0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.toolContentHover .upBlock {
+    transform: translateY(-5px);
+}
+
+.iconBlock svg {
+    width: 64px;
+    height: 64px;
+}
+
+.title, .titleHover {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.title {
+    transform: translateY(27.54px);
+}
+
+.titleHover {
+    margin-top: 16px;
+    transform: translateY(-7px);
+}
+
+.lowBlock {
+    transform: translateY(104px);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.toolContentHover .lowBlock {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.subText {
+    color: #a8a8a8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 24px;
+}
